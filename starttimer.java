@@ -6,13 +6,13 @@ import java.awt.*;
 import javax.swing.*;
 
 
-public class starttimer extends JFrame implements
+public class StartTimer extends JFrame implements
 MouseListener,ActionListener,KeyListener {
 JLabel ted=new JLabel("TEDx NITCalicut",SwingConstants.CENTER);
 JLabel clabel=new JLabel("CountDown Timer",JLabel.CENTER);
 
 Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-public starttimer() {
+public StartTimer() {
 setExtendedState(MAXIMIZED_BOTH);
 setBounds(0,0,screenSize.width, screenSize.height);
 setUndecorated(true);
@@ -38,7 +38,7 @@ setVisible(true);
     
     
     public static void main(String[] args){
-       new starttimer();
+       new StartTimer();
     }
 
     @Override
